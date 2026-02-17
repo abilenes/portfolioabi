@@ -1,14 +1,22 @@
+:root {
+    --bg: #bc46d9;          /* fundo geral */
+    --card: #a293a3;        /* cards */
+    --primary: #bf58ff;     /* azul destaque */
+    --text: #d4b8ce;        /* texto principal */
+    --text-soft: #9da5b4;   /* texto secundário */
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background: #b798d5;
+    background: var(--bg);
 }
 
 header {
-    background: #222;
-    color: white;
+    background: #4a0d5e;
+    color: var(--text);
     text-align: center;
-    padding: 40px;
+    padding: 20px;
 }
 header h1 {
     overflow: hidden;
@@ -39,21 +47,21 @@ ul {
 }
 
 .card {
-    background: white;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 8px;
+    background: var(--card);
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 12px;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
     transition: 0.3s;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 20px rgba(108, 82, 82, 0.4);
 }
 
 footer {
-    background: #222;
+    background: #5d0aa6;
     color: white;
     text-align: center;
     padding: 15px;
